@@ -1,11 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
 import {
   SafeAreaView,
@@ -23,11 +15,15 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Splash from './src/screens/splash';
+import Signin from './src/screens/signin';
 
-const App: () => React$Node = () => {
+const App = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
+      <Splash />
+      {/* <Signin /> */}
+      {/* <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
@@ -35,7 +31,7 @@ const App: () => React$Node = () => {
           <Header />
           {global.HermesInternal == null ? null : (
             <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
+              <Text style={styles.footer}>Engine: Hermesx</Text>
             </View>
           )}
           <View style={styles.body}>
@@ -52,22 +48,11 @@ const App: () => React$Node = () => {
                 <ReloadInstructions />
               </Text>
             </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
+
             <LearnMoreLinks />
           </View>
         </ScrollView>
-      </SafeAreaView>
+      </SafeAreaView> */}
     </>
   );
 };
