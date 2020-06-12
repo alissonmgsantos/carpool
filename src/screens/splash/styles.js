@@ -1,26 +1,26 @@
 import {StyleSheet} from 'react-native';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
+import colors from '../../../styles/colors';
 
 const styles = StyleSheet.create({
   container: {
-    display: 'flex',
-    backgroundColor: Colors.light,
+    backgroundColor: colors.secondary,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
   logo: {
-    width: 300,
-    height: 300,
-    resizeMode: 'contain',
-    alignSelf: 'center',
+    width: 150,
+    height: 150,
   },
   title: {
-    fontSize: 50,
+    fontSize: 80,
     fontWeight: 'bold',
+    color: colors.dark,
   },
   subtitle: {
     fontSize: 18,
+    paddingBottom: 50,
+    color: colors.dark,
   },
 });
 
