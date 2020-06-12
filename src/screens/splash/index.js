@@ -1,14 +1,21 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Text, Image, StatusBar, SafeAreaView} from 'react-native';
 
 import styles from './styles';
 import mobilityImg from '../../../assets/img/mobility.png';
 const Splash = ({navigation}) => {
+  const [load, setLoad] = useState(false);
   useEffect(() => {
-    setInterval(() => {
-      navigation.navigate('Signin');
-    }, 5000);
-  }, [navigation]);
+    function loadSplash() {
+      setTimeout(() => {
+        navigation.navigate('Signin');
+      }, 5000);
+      setLoad(!load);
+    }
+    if (!load) {
+      loadSplash();
+    }
+  }, [navigation, load]);
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar hidden />

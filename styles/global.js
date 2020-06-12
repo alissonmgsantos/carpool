@@ -15,7 +15,7 @@ const globalStyles = StyleSheet.create({
     borderRadius: 50,
     paddingLeft: 30,
     paddingRight: 30,
-    margin: 10,
+    marginVertical: 10,
   },
 
   buttonSubmit: {

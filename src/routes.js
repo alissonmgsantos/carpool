@@ -7,6 +7,8 @@ const Stack = createStackNavigator();
 
 import Splash from './screens/Splash';
 import Signin from './screens/Signin';
+import Signup from './screens/Signup';
+import Home from './screens/Home';
 
 const Routes = () => {
   return (
@@ -15,12 +17,22 @@ const Routes = () => {
         <Stack.Screen
           name="Splash"
           component={Splash}
-          options={{headerShown: false}}
+          options={{headerShown: false, animationEnabled: false}}
         />
         <Stack.Screen
           name="Signin"
           component={Signin}
-          options={{headerShown: false}}
+          options={{headerShown: false, animationEnabled: false}}
+        />
+        <Stack.Screen
+          name="Signup"
+          component={Signup}
+          options={{headerShown: false, animationEnabled: false}}
+        />
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{headerShown: false, animationEnabled: false}}
         />
       </Stack.Navigator>
     </NavigationContainer>
