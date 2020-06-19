@@ -17,9 +17,17 @@ const Home = ({navigation}) => {
   const DATA = [
     {
       id: '1',
-      title: 'First Item',
       modality: 'car',
-      destination: 'Suburbana',
+      destination: 'Ribeira - Pituba',
+      seats: '2 lugares Disponíveis',
+      time: '10 minutos',
+    },
+    {
+      id: '2',
+      modality: 'motocycle',
+      destination: 'Boca do rio - Paralela',
+      seats: '1 lugar disponível',
+      time: '3 minutos',
     },
   ];
 
@@ -41,10 +49,10 @@ const Home = ({navigation}) => {
             <View style={styles.card}>
               <Image source={mobilityImg} style={styles.avatar} />
               <View style={styles.cardHeader}>
-                <Text style={styles.cardTitle}>{item.title}</Text>
-                <Text style={styles.cardSubtitle}>{item.title}</Text>
+                <Text style={styles.cardTitle}>{item.destination}</Text>
+                <Text style={styles.cardSubtitle}>{item.seats}</Text>
               </View>
-              <Text style={styles.cardTime}>{item.title}</Text>
+              <Text style={styles.cardTime}>{item.time}</Text>
             </View>
           )}
           keyExtractor={(item) => item.id}

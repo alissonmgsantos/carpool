@@ -18,7 +18,7 @@ const Splash = ({navigation}) => {
   }, [navigation, load]);
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar hidden />
+      {/* <StatusBar hidden /> */}
       <Image source={mobilityImg} style={styles.logo} />
       <Text style={styles.title}>CarPool</Text>
       <Text style={styles.subtitle}>Facilidade para se mover</Text>

@@ -19,18 +19,21 @@ const styles = StyleSheet.create({
   cardHeader: {
     flexDirection: 'column',
     marginLeft: 10,
+    flexGrow: 1,
   },
   cardTitle: {
     fontSize: 18,
     color: colors.dark,
+    fontWeight: 'bold',
   },
   cardSubtitle: {
     color: colors.dark,
     fontSize: 16,
+    fontWeight: '600',
   },
   cardTime: {
-    fontSize: 16,
-    fontWeight: 'bold',
+    fontSize: 14,
+    fontWeight: '500',
   },
 });
 
